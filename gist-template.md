@@ -1,10 +1,11 @@
 # ComputerScienceJS
 
-As a web development student, I want a tutorial explaining a specific regex, so that I can understand the search pattern the regex defines.
+Regular expressions are a sequence of characters that define a search pattern.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+In this tutorial, I will be going over a regular expression used to match an Email. I will explain in detail how the following search pattern can help you find a matching email.
+![Alt text](image.png)
 
 ## Table of Contents
 
