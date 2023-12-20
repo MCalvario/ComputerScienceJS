@@ -5,7 +5,7 @@ Regular expressions are a sequence of characters that define a search pattern.
 ## Summary
 
 In this tutorial, I will be going over a regular expression used to match an Email. I will explain in detail how the following search pattern can help you find a matching email. <br>
-![Alt text](image.png)
+![Alt text](../images/image.png)
 
 ## Table of Contents
 
