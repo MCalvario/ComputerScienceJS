@@ -4,7 +4,7 @@ Regular expressions are a sequence of characters that define a search pattern.  
 
 ## Summary
 
- The email regex can be divided into three parts.  The first part is anything before the @ symbol.  The second part is the domain which appears after the @ symbol.  The third part is the extension which comes after the dot following the domain. I will explain these sections in detail using the following search pattern to help you find a matching email. <br>
+ The email regex can be divided into three parts. The first part is anything before the @ symbol. The second part is the domain which appears after the @ symbol. The third part is the extension which comes after the dot following the domain. I will explain these sections in detail using the following search pattern for matching an email. <br>
 ![Alt text](image.png)
 
 ## Table of Contents
@@ -14,10 +14,6 @@ Regular expressions are a sequence of characters that define a search pattern.  
 - [Character Classes](#character-classes)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
@@ -32,16 +28,10 @@ The quantifiers used in this regex is the + symbol, which means 1 or more charac
 Character classes are the things that appear in between the square brackets that allow you to define specific sets of characters that can be used in a search pattern.  The character classes used in this regex are \d, which is any digit between 0 and 9.
 
 ### Grouping and Capturing
+To capture groups, place parenthesis around the specific group/section you want to capture.  Here we can describe the three groups mentioned in the summary as they are being captured. Capturing group #1 in this expression is ([a-z0-9_\.-]+) that matches anything before the @ symbol. The second capturing group is ([\da-z\.-]+) which will match the domain appearing after the @ symbol. Capture group #3 is ([a-z\.]{2,6}) to capture the extension which comes after the dot following the domain.
 
 ### Bracket Expressions
-
-### Greedy and Lazy Match
-
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
+Brackets define a set of characters to be matched.  In this regex, [a-z0-9_\.-] is matching a-z, 0-9, and underscore or dot, or dash.  In the second set of brackets [\da-z\.-], it is matching any digit 0-9, a-z, and a dot or a dash.  In the third set of brackets [a-z\.], it is matching only a-z and a dot.
 
 ## Author
 
